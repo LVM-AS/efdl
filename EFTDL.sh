@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 if [[ -d /venv ]]; then
     echo "Using existing virtual environment in /venv/"
     ln -s /venv/ venv/
