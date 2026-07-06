@@ -47,3 +47,5 @@ chmod +x *.sh
 
 ln -s /venv/main venv
 source venv/bin/activate
+./setup-easy.sh
+python server.py
