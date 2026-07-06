@@ -1,4 +1,5 @@
 #!/bin/bash
+source /venv/main/bin/activate
 
 echo "|||||||||||||||||||||||||||||||||||||||||||||||||||||"
 echo "|||||||||||||||||||||||||||||||||||||||||||||||||||||"
@@ -43,3 +44,6 @@ git clone https://github.com/LVM-AS/efdl
 
 cd /workspace/efdl
 chmod +x *.sh
+
+ln -s /venv/main venv
+source venv/bin/activate
