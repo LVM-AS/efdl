@@ -1,0 +1,13 @@
+{
+  "use_httpx": true,
+  "use_playwright": true,
+  "workers": 8,
+  "delay": 0.5,
+  "max_forbidden": 3,
+  "max_retries": 3,
+  "db_state": true,
+  "fs_fallback": true,
+  "csv": false,
+  "debug": true,
+  "download_dir": "downloads/"
+}

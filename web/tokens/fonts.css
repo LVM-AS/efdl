@@ -1,0 +1,8 @@
+/* ============================================================
+   Fonts — IBM Plex superfamily
+   Chosen brand typefaces for EFTA-DL (the source tool is a CLI
+   with no typeface of its own). Loaded from Google Fonts CDN.
+   To self-host, drop woff2 files in assets/fonts/ and replace
+   this @import with local @font-face rules.
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap");

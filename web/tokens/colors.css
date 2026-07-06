@@ -1,0 +1,129 @@
+/* ============================================================
+   COLORS — EFTA-DL operator console
+   Base ramps (raw values) + semantic aliases.
+   Primary surface is the dark "operator" theme (on :root).
+   A light "archive paper" theme is available via .theme-paper
+   for document / compare / print contexts.
+   ============================================================ */
+
+:root {
+  /* ---- Ink ramp (cool near-black slate surfaces) ---- */
+  --ink-950: #08090c;
+  --ink-900: #0c0e12;   /* app background */
+  --ink-850: #11141a;
+  --ink-800: #161a21;   /* panel / card */
+  --ink-750: #1b212a;   /* raised */
+  --ink-700: #222934;   /* hover / input */
+  --ink-650: #2a3140;
+  --ink-600: #333b4a;   /* strong border */
+  --ink-500: #404959;   /* border on raised */
+
+  /* ---- Paper ramp (text on dark + light theme surfaces) ---- */
+  --paper-50:  #eef1f6;  /* primary text */
+  --paper-100: #dfe4ec;
+  --paper-200: #c6cdd9;  /* secondary text */
+  --slate-400: #899; /* fallback */
+  --slate-300: #aab2c0;
+  --slate-350: #939cab;  /* muted text */
+  --slate-450: #6f7889;  /* faint text */
+  --slate-550: #525b6b;  /* disabled / faintest */
+
+  /* ---- Signal amber (primary accent — active crawl) ---- */
+  --amber-300: #f6c878;
+  --amber-400: #f2b255;
+  --amber-500: #e9a23b;  /* base accent */
+  --amber-600: #d18e2c;  /* pressed */
+  --amber-700: #a96f1f;
+  --amber-tint: rgba(233, 162, 59, 0.13);
+  --amber-tint-strong: rgba(233, 162, 59, 0.22);
+
+  /* ---- File-state / semantic hues ---- */
+  --green-500: #3fb27f;  /* downloaded / success */
+  --green-tint: rgba(63, 178, 127, 0.14);
+  --orange-500: #f0883e; /* conflict (different content) */
+  --orange-tint: rgba(240, 136, 62, 0.14);
+  --violet-500: #8b7be8; /* unmatched */
+  --violet-tint: rgba(139, 123, 232, 0.16);
+  --red-500: #e5484d;    /* error / 403 forbidden */
+  --red-tint: rgba(229, 72, 77, 0.14);
+  --blue-500: #4c8df0;   /* info / hunk / links */
+  --blue-tint: rgba(76, 141, 240, 0.14);
+  --slate-tint: rgba(147, 156, 171, 0.12); /* duplicate / skipped */
+
+  /* ============================================================
+     SEMANTIC ALIASES (use these in components)
+     ============================================================ */
+  --bg-app: var(--ink-900);
+  --bg-sunken: var(--ink-950);
+  --bg-panel: var(--ink-800);
+  --bg-raised: var(--ink-750);
+  --bg-hover: var(--ink-700);
+  --bg-input: var(--ink-850);
+  --bg-input-hover: var(--ink-700);
+
+  --border-faint: rgba(255, 255, 255, 0.05);
+  --border-default: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --border-input: rgba(255, 255, 255, 0.12);
+
+  --text-primary: var(--paper-50);
+  --text-secondary: var(--paper-200);
+  --text-muted: var(--slate-350);
+  --text-faint: var(--slate-450);
+  --text-disabled: var(--slate-550);
+
+  --accent: var(--amber-500);
+  --accent-hover: var(--amber-400);
+  --accent-press: var(--amber-600);
+  --accent-tint: var(--amber-tint);
+  --accent-tint-strong: var(--amber-tint-strong);
+  --accent-fg: #1a1205; /* text/icon on a solid amber fill */
+
+  --focus-ring: rgba(233, 162, 59, 0.55);
+
+  /* state -> color mapping */
+  --state-downloaded: var(--green-500);
+  --state-downloaded-tint: var(--green-tint);
+  --state-duplicate: var(--slate-350);
+  --state-duplicate-tint: var(--slate-tint);
+  --state-conflict: var(--orange-500);
+  --state-conflict-tint: var(--orange-tint);
+  --state-unmatched: var(--violet-500);
+  --state-unmatched-tint: var(--violet-tint);
+  --state-error: var(--red-500);
+  --state-error-tint: var(--red-tint);
+  --state-info: var(--blue-500);
+  --state-info-tint: var(--blue-tint);
+}
+
+/* ============================================================
+   ARCHIVE PAPER — light theme scope (document & compare views)
+   ============================================================ */
+.theme-paper {
+  --bg-app: #efeae0;
+  --bg-sunken: #e6e0d3;
+  --bg-panel: #f7f4ed;
+  --bg-raised: #fbf9f4;
+  --bg-hover: #efeade;
+  --bg-input: #fffdf8;
+  --bg-input-hover: #f5f1e8;
+
+  --border-faint: rgba(40, 34, 22, 0.06);
+  --border-default: rgba(40, 34, 22, 0.12);
+  --border-strong: rgba(40, 34, 22, 0.2);
+  --border-input: rgba(40, 34, 22, 0.18);
+
+  --text-primary: #21242a;
+  --text-secondary: #3b3f47;
+  --text-muted: #6a6256;
+  --text-faint: #8a8273;
+  --text-disabled: #b4ad9d;
+
+  --accent: #b9791a;
+  --accent-hover: #a96c12;
+  --accent-press: #8f5a0d;
+  --accent-fg: #fffaf0;
+  --accent-tint: rgba(185, 121, 26, 0.12);
+
+  --focus-ring: rgba(185, 121, 26, 0.5);
+}
