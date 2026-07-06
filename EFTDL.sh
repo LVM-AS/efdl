@@ -43,5 +43,3 @@ git clone https://github.com/LVM-AS/efdl
 
 cd /workspace/efdl
 chmod +x *.sh
-
-./setup-easy.sh
