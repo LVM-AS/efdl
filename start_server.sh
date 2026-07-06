@@ -15,7 +15,7 @@ if [[ ! -f venv/bin/activate ]]; then
     exit 1
 fi
 
-source venv/main/bin/activate
+source venv/bin/activate
 
 echo "Starting server..."
 python server.py

@@ -1,18 +1,5 @@
 #!/bin/bash
 
-if [[ -d /venv ]]; then
-    echo "Using existing virtual environment in /venv/"
-    ln -s /venv/ venv/
-else
-    echo "Creating virtual environment..."
-    python3 -m venv /venv
-    ln -s /venv/ venv/
-fi
-
-echo "Activating virtual environment..."
-source venv/main/bin/activate
-
-
 echo "|||||||||||||||||||||||||||||||||||||||||||||||||||||"
 echo "|||||||||||||||||||||||||||||||||||||||||||||||||||||"
 echo "||||||||||||||||| STARTING INSTALL ||||||||||||||||||"
