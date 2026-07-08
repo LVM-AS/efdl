@@ -1,7 +1,7 @@
 """
 EFTA-DL Web Console — Flask backend.
 Start with:  python server.py
-Then open:   http://localhost:15000
+Then open:   http://localhost:5000
 """
 
 import json
@@ -911,6 +911,6 @@ def api_rescan():
 
 # ── Entry point ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 15000))
+    port = int(os.environ.get("PORT", 5000))
     print(f"\n  EFTA-DL Console  ->  http://localhost:{port}\n")
     app.run(host="0.0.0.0", port=port, threaded=True, debug=False)
